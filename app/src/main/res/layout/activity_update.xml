@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Nama Produk"/>
+
+    <EditText
+        android:id="@+id/namaprd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/produsenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/namaprd"
+        android:text="Produsen"></TextView>
+
+    <RadioGroup
+        android:id="@+id/radiogrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/produsenv"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unilever">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wings">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indofood">
+
+        </RadioButton>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/stkv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogrup"
+        android:textColor="@color/black"
+        android:text="Stok Awal"/>
+
+    <EditText
+        android:id="@+id/stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stkv"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/qtymv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stok"
+        android:textColor="@color/black"
+        android:text="Qty Masuk"/>
+
+    <EditText
+        android:id="@+id/qtymasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtymv"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/qtykv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtymasuk"
+        android:textColor="@color/black"
+        android:text="Qty Keluar"/>
+
+    <EditText
+        android:id="@+id/qtykeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtykv"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/btnnew"
+        android:layout_below="@+id/qtykeluar"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+</RelativeLayout>
